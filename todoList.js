@@ -32,12 +32,15 @@ function add_todo(){
        let inp = document.querySelector('.inp');
        let d = document.querySelector('.Date');
        let todo = inp.value;
+       todo = inp.value.trim();   
        let Date = d.value;
        inp.value = "";
        d.value = "";
+       if(todo!==""){
        todolist.push({name: todo, date: Date});
        console.log(todolist);
        update_list();
+    }
 } 
 
 function enter(event){
