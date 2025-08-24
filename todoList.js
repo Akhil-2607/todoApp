@@ -34,13 +34,14 @@ function add_todo(){
        let todo = inp.value;
        todo = inp.value.trim();   
        let Date = d.value;
-       inp.value = "";
-       d.value = "";
-       if(todo!==""){
+       
+       if(todo!=="" && Date!== ""){
        todolist.push({name: todo, date: Date});
        console.log(todolist);
        update_list();
     }
+    inp.value = "";
+    d.value = "";
 } 
 
 function enter(event){
