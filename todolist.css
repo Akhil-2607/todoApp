@@ -1,0 +1,112 @@
+body{
+                background-color: rgb(25,25,25);
+                color: white;
+                font-family: Arial;
+                font-size: 20px;
+            }
+            .para{
+                margin-left: 1.25cm;
+                margin-top: 1cm;
+                margin-bottom: 3cm;
+                font-size: 40px;
+                text-align: center;
+                animation: glitch 2s infinite;
+                
+            }
+           @keyframes glitch {
+               0% { text-shadow: 2px 2px red, -2px -2px blue; }
+               20% { text-shadow: -2px 0 red, 2px -2px blue; }
+               40% { text-shadow: 2px -2px red, -2px 2px blue; }
+               60% { text-shadow: -2px 2px red, 2px 0 blue; }
+              80% { text-shadow: 2px 0 red, -2px 2px blue; }
+              100% { text-shadow: 2px 2px red, -2px -2px blue; }
+            }
+             .area{
+               margin-top: 0.85cm;
+            }
+            .inp{
+                align-items: center;
+                margin-left: 0.35cm;
+                width: 11cm;
+                height: 0.80cm;
+                border-radius: 5px;
+                border: none;
+                margin-right: 15px;
+                margin-bottom: 0.75cm;
+                box-shadow: 0 0 15px rgb(219, 179, 179);
+
+                font-size: 18px;       /* bigger text */
+                color: #ced3dcd8;        /* text color */
+                font-weight: bold;     /* bold text */
+                padding-left: 10px;    /* spacing inside */
+                background-color: #222; /* darker input box */
+            }
+            .add{
+                background-color: green;
+                color: azure;
+                border: none;
+                width: 2cm;
+                height: 0.90cm;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgb(0, 148, 0);
+            }
+            .whole{
+                display: flex;
+                flex-direction: column; 
+                background-color: rgba(43, 42, 40, 0.718);
+                margin: 0 auto;   /* centers horizontally */
+                width: fit-content; /* shrink to fit content */
+                padding: 20px;    /* optional: give it breathing space */
+                border-radius: 10px;
+                box-shadow: 0 0 25px rgb(4, 194, 26), 0 0 50px rgba(125, 1, 202, 0.711);
+            }
+            .Date{
+                border: none;
+                border-radius: 5px;
+                color: rgb(226, 11, 11);
+                font-size: 15px;
+                font-family: Arial;
+                margin-right: 0.5cm;
+                margin-left: 0.5cm;
+                height: 0.8cm;
+                box-shadow: 0 0 10px rgb(219, 179, 179);
+            }
+            .delete{  
+                background-color: red;
+                box-shadow: 0 0 15px rgb(244, 61, 61);
+                color: azure;
+                border: none;
+                width: 2cm;
+                height: 0.85cm;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 5px;
+            }
+            .todo-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgba(15, 2, 2, 0.126);
+                padding: 8px 12px;
+                margin: 12px 6px;
+                border-radius: 6px;
+            }
+
+            .todo-name {
+                flex: 2; /* takes more space */
+                text-shadow: 0 0 20px rgb(219, 179, 179);
+            }
+
+            .todo-date {
+                flex: 1; /* takes less space */
+                text-align: center;
+                font-size: large;
+                color: #ff5252;
+                font-size: 18px;
+                text-shadow: 0 0 10px rgb(219, 179, 179);
+            }
+            .delete:hover {
+                background-color: darkred;
+            }

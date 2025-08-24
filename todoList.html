@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8"> 
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List</title>
+        <link rel = 'stylesheet' href="todolist.css">
+    </head>
+    <body>
+        
+        <p class = "para">Todo List</p>
+        <div class = "whole">
+        <div class = "area">
+        <input class = "inp" onkeydown="enter(event)" placeholder ="Todo Name" >
+        <input class = "Date" type = "date">
+        <button class = "add"  onclick = "add_todo()">Add</button>
+        </div>
+        <div class = "list"></div>
+        </div>
+        <script src = "todoList.js"></script>
+    </body>
+</html>
